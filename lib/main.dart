@@ -75,7 +75,7 @@ class _WeatherAppState extends State<WeatherApp> {
   }
 
   void _search() async {
-    final response = await _dataService.getWeather(_cityTextController.text);
+    final response = await _dataService.getWeather('_cityTextController.text');
     setState(() {
       _response = response;
     });
